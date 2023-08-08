@@ -4,6 +4,7 @@ import com.site.sbbpp.question.Question;
 import com.site.sbbpp.question.QuestionService;
 import lombok.RequiredArgsConstructor;
 
+import java.security.Principal;
 import jakarta.validation.Valid;
 import org.springframework.validation.BindingResult;
 import org.springframework.stereotype.Controller;
@@ -23,7 +24,7 @@ public class AnswerController {
 
     @PostMapping("/create/{id}")
     public String createAnswer(Model model, @PathVariable("id") Integer id,
-                               @Valid AnswerForm answerForm, BindingResult bindingResult) {
+                               @Valid AnswerForm answerForm, BindingResult bindingResult, Principal principal) {
         Question question = this.questionService.getQuestion(id);
         if (bindingResult.hasErrors()) {
             model.addAttribute("question", question);

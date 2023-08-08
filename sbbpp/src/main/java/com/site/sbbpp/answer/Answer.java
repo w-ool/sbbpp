@@ -3,6 +3,7 @@ package com.site.sbbpp.answer;
 import java.time.LocalDateTime;
 
 import com.site.sbbpp.question.Question;
+import com.site.sbbpp.user.SiteUser;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -12,6 +13,7 @@ import jakarta.persistence.ManyToOne;
 
 import lombok.Getter;
 import lombok.Setter;
+
 import org.springframework.data.annotation.CreatedDate;
 
 @Getter
@@ -30,4 +32,7 @@ public class Answer {
 
     @ManyToOne
     private Question question;
+
+    @ManyToOne
+    private SiteUser author;
 }
