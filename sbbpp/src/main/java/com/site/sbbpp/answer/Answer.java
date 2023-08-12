@@ -1,6 +1,8 @@
 package com.site.sbbpp.answer;
 
 import java.time.LocalDateTime;
+import java.util.Set;
+import jakarta.persistence.ManyToMany;
 
 import com.site.sbbpp.question.Question;
 import com.site.sbbpp.user.SiteUser;
@@ -37,4 +39,7 @@ public class Answer {
 
     @ManyToOne
     private SiteUser author;
+
+    @ManyToMany
+    Set<SiteUser> voter;
 }
