@@ -15,5 +15,3 @@ e
 5sbbpp/src/main/java/com/site/sbbpp/user/UserRole.java,0\f\0fd5c2f463b6750c552cecdb7aa67c06b948a731
 p
 @sbbpp/src/main/java/com/site/sbbpp/user/UserSecurityService.java,1\6\162e82ff4652b385848ffb4531066473d6df8608
-i
-9sbbpp/src/main/java/com/site/sbbpp/question/Question.java,3\5\35ad178f4014d6b9b7b3771f3e11211ed3a3e3d9

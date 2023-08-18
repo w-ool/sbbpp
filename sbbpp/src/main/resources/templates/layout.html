@@ -12,10 +12,25 @@
 </head>
 <body>
   <!-- 네비게이션바 -->
-  <nav th:replace="~{navbar :: navbarFragment}"></nav>
-  <!-- 기본 템플릿 안에 삽입될 내용 Start -->
-  <th:block layout:fragment="content"></th:block>
-  <!-- 기본 템플릿 안에 삽입될 내용 End -->
+  <div class="wrapper">
+    <nav th:replace="~{navbar :: navbarFragment}"></nav>
+    <!-- 기본 템플릿 안에 삽입될 내용 Start -->
+    <th:block layout:fragment="content"></th:block>
+    <!-- 기본 템플릿 안에 삽입될 내용 End -->
+  </div>
+  <footer class="container-fluid bg-secondary text-white">
+    <div class="row">
+      <hr style="width: 95%">
+      <div class="col-md-4 col-xs-12">
+        <button type="button" class="btn btn-secondary btn-lg" onclick = "location.href = '{% url 'traffico:introduce' %}'">사이트 소개</button>
+        <button type="button" class="btn btn-secondary btn-lg" onclick = "location.href = '{% url 'traffico:sitemap' %}'">사이트 맵</button>
+      </div>
+      <ul class="col-md-4 col-xs-12">
+        <li>· 유한울 : docus17@gmail.com</li>
+      </ul>
+      <p class="col-md-4 col-xs-12">Copyright © 2023, wool. All rights reserved.</p>
+    </div>
+  </footer>
   <!-- Bootstrap JS -->
   <script th:src="@{/bootstrap.min.js}"></script>
   <!-- 자바스크립트 Start -->
