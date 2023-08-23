@@ -15,3 +15,15 @@ e
 5sbbpp/src/main/java/com/site/sbbpp/user/UserRole.java,0\f\0fd5c2f463b6750c552cecdb7aa67c06b948a731
 p
 @sbbpp/src/main/java/com/site/sbbpp/user/UserSecurityService.java,1\6\162e82ff4652b385848ffb4531066473d6df8608
+b
+2sbbpp/src/main/java/com/site/sbbpp/CommonUtil.java,7\b\7b8815efe52d82cb77a3aea6d785bf287d5d3448
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+p
+@sbbpp/src/main/java/com/site/sbbpp/question/QuestionService.java,f\c\fccd407556d52ccd160542e414087ab7ae8c5b76
+g
+7sbbpp/src/main/java/com/site/sbbpp/HelloController.java,2\9\29f673bd0f82106a6558e4352c2088ced9b98077
+f
+6sbbpp/src/main/java/com/site/sbbpp/MainController.java,8\e\8ed449f3802a91528f2fa321980b7bbe4fb9203b
