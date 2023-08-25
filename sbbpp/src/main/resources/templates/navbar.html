@@ -6,15 +6,41 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" sec:authorize="isAnonymous()" th:href="@{/user/login}">로그인</a>
-                    <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/user/logout}">로그아웃</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" th:href="@{/user/signup}">회원가입</a>
-                </li>
-            </ul>
+            <nav class="navbar navbar-expand-lg fixed-top color4" >
+                <div class="container">
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">grid</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">map</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">board</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    othet
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Traffico</a>
+                                    <a class="dropdown-item" href="#">TaleTrove</a>
+                                </div>
+                            </li>
+                        </ul><!-- navbar-nav -->
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" sec:authorize="isAnonymous()" th:href="@{/user/login}">로그인</a>
+                                <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/user/logout}">로그아웃</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" th:href="@{/user/signup}">회원가입</a>
+                            </li>
+                        </ul>
+                    </div><!-- collapse -->
+                </div><!-- container -->
+            </nav><!-- navbar -->
         </div>
     </div>
 </nav>
